@@ -1,0 +1,42 @@
+.modal_bg {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.4);
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    z-index: 1;
+    height: 300px;
+    width: 400px;
+    background-color: rgb(201, 201, 201);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    h2 {
+        font-size: 26px;
+    }
+
+    input {
+        font-size: 25px;
+        outline: none;
+    }
+
+    button {
+        height: 40px;
+        width: 150px;
+        font-size: 24px;
+        border: none;
+        transition: 0.24s;
+
+        &:hover {
+            filter: brightness(1.1);
+        }
+    }
+}
